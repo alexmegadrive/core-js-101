@@ -1,3 +1,4 @@
+/* eslint-disable space-in-parens */
 /* *******************************************************************************************
  *                                                                                           *
  * Please read the following tutorial before implementing tasks:                              *

@@ -1,3 +1,5 @@
+/* eslint-disable operator-linebreak */
+/* eslint-disable space-in-parens */
 /* *******************************************************************************************
  *                                                                                           *
  * Please read the following tutorial before implementing tasks:                              *
@@ -112,8 +114,7 @@ function getLinearEquationRoot( /* a, b */ ) {
  */
 function getAngleBetweenVectors(x1, y1, x2, y2) {
   return Math.acos((x1 * x2 + y1 * y2) /
-    (Math.sqrt(x1 ** 2 + y1 ** 2) *
-      Math.sqrt(x2 ** 2 + y2 ** 2)));
+    (Math.sqrt(x1 ** 2 + y1 ** 2) * Math.sqrt(x2 ** 2 + y2 ** 2)));
 }
 
 /**
