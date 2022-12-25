@@ -27,7 +27,7 @@
  *  21 => 'Fizz'
  *
  */
-function getFizzBuzz(/* num */) {
+function getFizzBuzz( /* num */ ) {
   throw new Error('Not implemented');
 }
 
@@ -43,8 +43,11 @@ function getFizzBuzz(/* num */) {
  *   5  => 120
  *   10 => 3628800
  */
-function getFactorial(/* n */) {
-  throw new Error('Not implemented');
+function getFactorial(n) {
+  if (n === 0) {
+    return 1;
+  }
+  return n * getFactorial(n - 1);
 }
 
 
@@ -60,7 +63,7 @@ function getFactorial(/* n */) {
  *   5,10  =>  45 ( = 5+6+7+8+9+10 )
  *   -1,1  =>  0  ( = -1 + 0 + 1 )
  */
-function getSumBetweenNumbers(/* n1, n2 */) {
+function getSumBetweenNumbers( /* n1, n2 */ ) {
   throw new Error('Not implemented');
 }
 
@@ -80,8 +83,8 @@ function getSumBetweenNumbers(/* n1, n2 */) {
  *   10,1,1   =>  false
  *   10,10,10 =>  true
  */
-function isTriangle(/* a, b, c */) {
-  throw new Error('Not implemented');
+function isTriangle(a, b, c) {
+  return a + b > c && a + c > b && b + c > a;
 }
 
 
@@ -117,8 +120,8 @@ function isTriangle(/* a, b, c */) {
  *   { top:20, left:20, width: 20, height: 20 }    =>  false
  *
  */
-function doRectanglesOverlap(/* rect1, rect2 */) {
-  throw new Error('Not implemented');
+function doRectanglesOverlap(rect1, rect2) {
+  return ((rect1.width + rect1.left > rect2.left) && (rect1.top + rect1.height > rect2.top));
 }
 
 
@@ -148,7 +151,7 @@ function doRectanglesOverlap(/* rect1, rect2 */) {
  *   { center: { x:0, y:0 }, radius:10 },  { x:10, y:10 }   => false
  *
  */
-function isInsideCircle(/* circle, point */) {
+function isInsideCircle( /* circle, point */ ) {
   throw new Error('Not implemented');
 }
 
@@ -164,7 +167,7 @@ function isInsideCircle(/* circle, point */) {
  *   'abracadabra'  => 'c'
  *   'entente' => null
  */
-function findFirstSingleChar(/* str */) {
+function findFirstSingleChar( /* str */ ) {
   throw new Error('Not implemented');
 }
 
@@ -191,7 +194,7 @@ function findFirstSingleChar(/* str */) {
  *   5, 3, true, true   => '[3, 5]'
  *
  */
-function getIntervalString(/* a, b, isStartIncluded, isEndIncluded */) {
+function getIntervalString( /* a, b, isStartIncluded, isEndIncluded */ ) {
   throw new Error('Not implemented');
 }
 
@@ -208,8 +211,8 @@ function getIntervalString(/* a, b, isStartIncluded, isEndIncluded */) {
  * 'rotator' => 'rotator'
  * 'noon' => 'noon'
  */
-function reverseString(/* str */) {
-  throw new Error('Not implemented');
+function reverseString(str) {
+  return str.split('').reverse().join('');
 }
 
 
@@ -225,8 +228,8 @@ function reverseString(/* str */) {
  *   87354 => 45378
  *   34143 => 34143
  */
-function reverseInteger(/* num */) {
-  throw new Error('Not implemented');
+function reverseInteger(num) {
+  return Number(num.toString().split('').reverse().join(''));
 }
 
 
@@ -250,7 +253,7 @@ function reverseInteger(/* num */) {
  *   5436468789016589 => false
  *   4916123456789012 => false
  */
-function isCreditCardNumber(/* ccn */) {
+function isCreditCardNumber( /* ccn */ ) {
   throw new Error('Not implemented');
 }
 
@@ -268,7 +271,7 @@ function isCreditCardNumber(/* ccn */) {
  *   10000 ( 1+0+0+0+0 = 1 ) => 1
  *   165536 (1+6+5+5+3+6 = 26,  2+6 = 8) => 8
  */
-function getDigitalRoot(/* num */) {
+function getDigitalRoot( /* num */ ) {
   throw new Error('Not implemented');
 }
 
@@ -294,7 +297,7 @@ function getDigitalRoot(/* num */) {
  *   '{)' = false
  *   '{[(<{[]}>)]}' = true
  */
-function isBracketsBalanced(/* str */) {
+function isBracketsBalanced( /* str */ ) {
   throw new Error('Not implemented');
 }
 
@@ -336,7 +339,7 @@ function toNaryString(num, n) {
  *   ['/web/assets/style.css', '/.bin/mocha',  '/read.me'] => '/'
  *   ['/web/favicon.ico', '/web-scripts/dump', '/verbalizer/logs'] => '/'
  */
-function getCommonDirectoryPath(/* pathes */) {
+function getCommonDirectoryPath( /* pathes */ ) {
   throw new Error('Not implemented');
 }
 
@@ -359,7 +362,7 @@ function getCommonDirectoryPath(/* pathes */) {
  *                         [ 6 ]]
  *
  */
-function getMatrixProduct(/* m1, m2 */) {
+function getMatrixProduct( /* m1, m2 */ ) {
   throw new Error('Not implemented');
 }
 
@@ -394,7 +397,7 @@ function getMatrixProduct(/* m1, m2 */) {
  *    [    ,   ,    ]]
  *
  */
-function evaluateTicTacToePosition(/* position */) {
+function evaluateTicTacToePosition( /* position */ ) {
   throw new Error('Not implemented');
 }
 
